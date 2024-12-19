@@ -1,217 +1,231 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body Styling */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    flex-direction: column; /* Membuat konten vertikal */
-    justify-content: space-between; /* Menjaga konten tetap di tengah */
-  }
-  
-  /* Navbar Styling */
-  nav {
-    background-color: #333;
-    padding: 10px;
-    width: 100%; /* Memastikan navbar full width */
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px ;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-  
-  nav ul li {
-    margin-right: 40px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Main Page Styling */
-  #main-page {
-    text-align: center;
-    padding: 50px;
-  }
-  
-  #main-page h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  #main-page a {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    margin: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  #main-page a:hover {
-    background-color: #45a049;
-  }
-  
-  /* Register Page Container */
-  #register-page {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    margin-top: 20px; /* Margin atas */
-    margin-bottom: 20px; /* Margin bawah */
-  }
-  
-  /* Heading Style */
-  #register-page h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  
-  /* Form Styling */
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin: 0;
-  }
-  
-  /* Label Styling */
-  label {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  /* Input & Textarea Styling */
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="tel"],
-  textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    margin-bottom: 10px;
-    transition: border-color 0.3s;
-  }
-  
-  /* Focus Styling */
-  input:focus,
-  textarea:focus {
-    border-color: #4CAF50;
-    outline: none;
-  }
-  
-  /* Button Styling */
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Textarea Specific Styling */
-  textarea {
-    resize: vertical;
-    height: 100px;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 
-  #login-page {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    margin-top: 20px; /* Margin atas */
-    margin-bottom: 20px; /* Margin bawah */
-  }
-  
-  /* Heading Style */
-  #login-page h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  
-  /* Form Styling */
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin: 0;
-  }
-  
-  /* Label Styling */
-  label {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  /* Input & Textarea Styling */
-  input[type="email"],
-  input[type="password"] {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    margin-bottom: 10px;
-    transition: border-color 0.3s;
-  }
-  
-  /* Focus Styling */
-  input:focus {
-    border-color: #4CAF50;
-    outline: none;
-  }
-  
-  /* Button Styling */
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
+/* Navbar Styling */
+nav {
+  background-color: #333;
+  padding: 20px;
+  width: 100%; /* Memastikan navbar full width */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 40px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  color: white;
+}
+
+/* hEro Section */
+section {
+  background-color: #78b3ce;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-bg {
+  width: 80vh;
+}
+
+.btn-hero {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn-hero a {
+  padding: 20px;
+  margin-right: 20px;
+  background: #f96e2a;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.btn-hero a:hover {
+  transition: 0.3s;
+  background-color: #4caf50;
+}
+
+.hero-text {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.hero-text,
+h1 {
+  font-size: 20px;
+}
+
+/* Register Page Container */
+#register-page {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px; /* Margin atas */
+  margin-bottom: 20px; /* Margin bawah */
+}
+
+/* Heading Style */
+#register-page h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+}
+
+/* Label Styling */
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Input & Textarea Styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+/* Focus Styling */
+input:focus,
+textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Button Styling */
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Textarea Specific Styling */
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+#login-page {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px; /* Margin atas */
+  margin-bottom: 20px; /* Margin bawah */
+}
+
+/* Heading Style */
+#login-page h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+}
+
+/* Label Styling */
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Input & Textarea Styling */
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+/* Focus Styling */
+input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Button Styling */
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
