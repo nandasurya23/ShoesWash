@@ -13,6 +13,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
 }
 
 nav ul {
@@ -77,14 +78,20 @@ section {
   background-color: #4caf50;
 }
 
-.hero-text {
+.hero-header {
   color: #fff;
-  margin-bottom: 40px;
+  font-size: 42px;
+  letter-spacing: 2px;
 }
 
 .hero-text,
-h1 {
+p {
   font-size: 20px;
+  color: white;
+  text-align: justify;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Register Page Container */
