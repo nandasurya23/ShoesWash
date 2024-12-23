@@ -7,9 +7,9 @@
 
 /* Navbar Styling */
 nav {
-  background-color: #333;
-  padding: 20px;
-  width: 100%; /* Memastikan navbar full width */
+  background-color: #fff6e9;
+  padding: 20px 40px 20px 40px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,9 +28,10 @@ nav li {
 }
 
 nav ul li a {
-  color: white;
+  color: #333;
   text-decoration: none;
   font-size: 18px;
+  font-weight: 500;
 }
 
 nav ul li a:hover {
@@ -38,16 +39,17 @@ nav ul li a:hover {
 }
 
 .logo {
-  color: white;
+  color: #333;
 }
 
 /* hEro Section */
-section {
+.hero {
   background-color: #78b3ce;
   padding: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 .hero-bg {
@@ -80,12 +82,11 @@ section {
 
 .hero-header {
   color: #fff;
-  font-size: 42px;
+  font-size: 48px;
   letter-spacing: 2px;
 }
 
-.hero-text,
-p {
+.hero-text {
   font-size: 20px;
   color: white;
   text-align: justify;
@@ -93,10 +94,97 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+/* service */
+.service {
+  padding: 40px;
+  background: #fff6e9;
+}
 
+.service h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align:  center;
+}
+
+.container {
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: auto auto auto auto;
+}
+
+.container-price {
+  background: #78b3ce;
+  border-radius: 10px;
+}
+
+.price {
+  background: #f96e2a;
+  padding: 20px;
+  font-size: 32px;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.detail-service {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  color: #ffff;
+}
+
+.detail-service p {
+  margin-left: 10px;
+}
+
+.rate {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 30px;
+  padding: 20px;
+  color: #f9e12a;
+}
+
+.rate i {
+  margin-left: 10px;
+}
+/* about */
+.container-about {
+  background-color: #78b3ce;
+  padding: 40px;
+}
+
+.container-about h1 {
+  font-size: 48px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about h3 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.6;
+}
 /* Register Page Container */
+.register {
+  padding: 40px;
+}
 #register-page {
-  background-color: white;
+  background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -104,6 +192,7 @@ p {
   max-width: 400px;
   margin-top: 20px; /* Margin atas */
   margin-bottom: 20px; /* Margin bawah */
+  margin: auto;
 }
 
 /* Heading Style */
@@ -180,6 +269,7 @@ textarea {
   max-width: 400px;
   margin-top: 20px; /* Margin atas */
   margin-bottom: 20px; /* Margin bawah */
+  margin: auto;
 }
 
 /* Heading Style */
@@ -235,4 +325,233 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #45a049;
+}
+
+/* Profile Page */
+.profile-page {
+  padding: 40px;
+}
+
+.profile-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: auto;
+}
+
+.profile-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.profile-details {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.profile-details p {
+  font-size: 16px;
+  color: #333;
+}
+
+.profile-details strong {
+  color: #555;
+}
+
+/* Update Profile Form */
+.update-profile-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.update-profile-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.update-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.update-profile-form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.update-profile-form input,
+.update-profile-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+.update-profile-form input:focus,
+.update-profile-form textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Update and Cancel Button Styling */
+.update-profile-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 48%;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 48%;
+}
+
+button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+/* Alert Styles */
+.alert {
+  background-color: #f9e12a;
+  padding: 20px;
+  color: #333;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.alert button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.alert button:hover {
+  background-color: #0056b3;
+}
+
+/* Profile Page Details (Example) */
+.profile-info {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.profile-info p {
+  font-size: 16px;
+  color: #333;
+}
+
+.profile-info strong {
+  color: #555;
+}
+
+.profile-info .edit-profile {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-info .edit-profile a {
+  text-decoration: none;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.profile-info .edit-profile a:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .profile-container,
+  .update-profile-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .update-profile-buttons {
+    flex-direction: column;
+  }
+
+  button[type="submit"],
+  button[type="button"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .alert {
+    font-size: 14px;
+  }
+}
+
+
+.logout-button button {
+  background-color: #f44336; /* Merah untuk logout */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.logout-button button:hover {
+  background-color: #d32f2f;
 }
