@@ -104,7 +104,7 @@ nav ul li a:hover {
   font-size: 48px;
   font-weight: 500;
   margin-bottom: 20px;
-  text-align:  center;
+  text-align: center;
 }
 
 .container {
@@ -448,7 +448,6 @@ button[type="button"] {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  width: 48%;
 }
 
 button[type="button"]:hover {
@@ -541,7 +540,6 @@ button[type="button"]:hover {
   }
 }
 
-
 .logout-button button {
   background-color: #f44336; /* Merah untuk logout */
   color: white;
@@ -554,4 +552,131 @@ button[type="button"]:hover {
 
 .logout-button button:hover {
   background-color: #d32f2f;
+}
+
+/* transaksi */
+/* Umum untuk semua elemen form */
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk judul form */
+.form-title {
+  text-align: center;
+  color: #333;
+}
+
+/* Styling untuk pesan error */
+.error-message {
+  font-size: 14px;
+  color: red;
+  text-align: center;
+}
+
+/* Styling untuk setiap label */
+.form-label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Styling untuk input dan select */
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Menambahkan efek ketika input dalam keadaan fokus */
+.form-input:focus,
+.form-select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Styling untuk tombol submit */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Efek hover pada tombol submit */
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Umum untuk semua elemen form */
+.payment-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk judul form */
+.payment-title {
+  text-align: center;
+  color: #333;
+}
+
+/* Styling untuk pesan error */
+.error-message {
+  font-size: 14px;
+  color: red;
+  text-align: center;
+}
+
+/* Styling untuk detail transaksi */
+.transaction-details {
+  margin-bottom: 20px;
+}
+
+/* Styling untuk setiap detail transaksi */
+.transaction-details p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.transaction-details strong {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+/* Styling untuk tombol bayar */
+.payment-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Efek hover pada tombol bayar */
+.payment-button:hover {
+  background-color: #45a049;
 }

@@ -1,8 +1,8 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header('Location: login.php');
-    exit;
+  header('Location: login.php');
+  exit;
 }
 
 // Data pengguna dari session
@@ -17,6 +17,7 @@ $updateMode = isset($_GET['update']) ? true : false;
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +25,7 @@ $updateMode = isset($_GET['update']) ? true : false;
   <link rel="stylesheet" href="styles.css">
   <title>User Profile</title>
 </head>
+
 <body>
   <!-- Profile Page -->
   <div class="profile-page">
@@ -84,8 +86,15 @@ $updateMode = isset($_GET['update']) ? true : false;
           </div>
         </form>
       <?php endif; ?>
+      <div class="logout-button">
+    <a href="logout.php">
+      <button>Logout</button>
+    </a>
+  </div>
     </div>
+  
   </div>
 
 </body>
+
 </html>
