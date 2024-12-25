@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param('iii', $id_transaksi, $id_pelanggan, $total_pembayaran);
 
     if ($stmt->execute()) {
-        header('Location: pembayaran_sukses.php');
+        header('Location: index.php');
         exit;
     } else {
         $error = "Gagal melakukan pembayaran.";
@@ -59,33 +59,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Pembayaran</title>
 </head>
+
 <body>
-<h2 class="payment-title">Pembayaran</h2>
+    <h2 class="payment-title">Pembayaran</h2>
 
-<?php if (isset($error)): ?>
-    <p class="error-message"><?= htmlspecialchars($error) ?></p>
-<?php endif; ?>
+    <?php if (isset($error)): ?>
+        <p class="error-message"><?= htmlspecialchars($error) ?></p>
+    <?php endif; ?>
 
-<h3>Detail Transaksi</h3>
-<div class="transaction-details">
-    <p><strong>Service:</strong> <?= htmlspecialchars($transaksi['nama_service']) ?></p>
-    <p><strong>Harga per Sepatu:</strong> Rp<?= number_format($transaksi['harga'], 0, ',', '.') ?></p>
-    <p><strong>Jumlah Sepatu:</strong> <?= htmlspecialchars($transaksi['jumlah_sepatu']) ?></p>
-    <p><strong>Merk Sepatu:</strong> <?= htmlspecialchars($transaksi['merk_sepatu']) ?></p>
-    <p><strong>Warna Sepatu:</strong> <?= htmlspecialchars($transaksi['warna_sepatu']) ?></p>
-    <p><strong>Tanggal Penjemputan:</strong> <?= htmlspecialchars($transaksi['tanggal_penjemputan']) ?></p>
-    <p><strong>Total Pembayaran:</strong> Rp<?= number_format($transaksi['harga'] * $transaksi['jumlah_sepatu'], 0, ',', '.') ?></p>
-</div>
+    <h3>Detail Transaksi</h3>
+    <div class="transaction-details">
+        <p><strong>Service:</strong> <?= htmlspecialchars($transaksi['nama_service']) ?></p>
+        <p><strong>Harga per Sepatu:</strong> Rp<?= number_format($transaksi['harga'], 0, ',', '.') ?></p>
+        <p><strong>Jumlah Sepatu:</strong> <?= htmlspecialchars($transaksi['jumlah_sepatu']) ?></p>
+        <p><strong>Merk Sepatu:</strong> <?= htmlspecialchars($transaksi['merk_sepatu']) ?></p>
+        <p><strong>Warna Sepatu:</strong> <?= htmlspecialchars($transaksi['warna_sepatu']) ?></p>
+        <p><strong>Tanggal Penjemputan:</strong> <?= htmlspecialchars($transaksi['tanggal_penjemputan']) ?></p>
+        <p><strong>Total Pembayaran:</strong> Rp<?= number_format($transaksi['harga'] * $transaksi['jumlah_sepatu'], 0, ',', '.') ?></p>
+    </div>
 
-<form action="" method="POST" class="payment-container">
-    <button type="submit" class="payment-button">Bayar Sekarang</button>
-</form>
+    <form action="" method="POST" class="payment-container">
+        <button type="submit" class="payment-button">Bayar Sekarang</button>
+        <h2>No rek : 88894585</h2>
+    </form>
 
 </body>
+
 </html>

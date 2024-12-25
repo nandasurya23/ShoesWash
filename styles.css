@@ -113,6 +113,11 @@ nav ul li a:hover {
   grid-template-columns: auto auto auto auto;
 }
 
+.button-price a {
+  text-decoration: none;
+  color: white;
+}
+
 .container-price {
   background: #78b3ce;
   border-radius: 10px;
@@ -454,32 +459,6 @@ button[type="button"]:hover {
   background-color: #5a6268;
 }
 
-/* Alert Styles */
-.alert {
-  background-color: #f9e12a;
-  padding: 20px;
-  color: #333;
-  font-size: 16px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.alert button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.alert button:hover {
-  background-color: #0056b3;
-}
-
 /* Profile Page Details (Example) */
 .profile-info {
   padding: 20px;
@@ -680,3 +659,59 @@ button[type="button"]:hover {
 .payment-button:hover {
   background-color: #45a049;
 }
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+}
+
+.footer-left h2 {
+  margin-bottom: 10px;
+}
+
+.footer-middle ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-middle ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-middle ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-middle ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.social-media-icons a:hover {
+  color: #ddd;
+}
+
