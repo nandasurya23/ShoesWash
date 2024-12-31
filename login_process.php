@@ -30,6 +30,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Simpan data user ke session
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
+            $_SESSION['email'] = $user['email'];
+            $_SESSION['address'] = $user['address'];
+            $_SESSION['phone'] = $user['phone'];
+
 
             // Redirect ke halaman index
             header("Location: index.php");
@@ -41,4 +45,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Error: " . $e->getMessage();
     }
 }
-?>

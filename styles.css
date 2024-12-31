@@ -14,6 +14,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  z-index: 9999;
 }
 
 nav ul {
@@ -496,6 +497,30 @@ button[type="button"]:hover {
   background-color: #45a049;
 }
 
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile .edit-profile button {
+  background-color: #4caf50;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile .back-to-home button {
+  background-color: #78b3ce;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
   .profile-container,
@@ -520,13 +545,14 @@ button[type="button"]:hover {
 }
 
 .logout-button button {
-  background-color: #f44336; /* Merah untuk logout */
+  background-color: #f44336; 
   color: white;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   margin-top: 20px;
+  border-radius: 5px;
 }
 
 .logout-button button:hover {
@@ -665,6 +691,8 @@ footer {
   color: white;
   padding: 40px 0;
   text-align: center;
+  bottom: 0;
+  width: 100%; /* Pastikan footer mengisi lebar halaman */
 }
 
 .footer-content {
@@ -711,7 +739,109 @@ footer {
   color: white;
 }
 
-.social-media-icons a:hover {
-  color: #ddd;
+
+/* about */
+.about-section {
+  background: linear-gradient(135deg, #4caf50, #78b3ce);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+.content {
+  margin: 10px auto;
+  text-align: justify;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* contact */
+/* Kontainer Formulir Kontak */
+.content-contact {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Judul Konten */
+.content-contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  margin-top: 80px;
+}
+
+/* Paragraf Intro */
+.content-contact p {
+  font-size: 1em;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Formulir Kontak */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+/* Input dan Textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+/* Input dan Textarea ketika difokuskan */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4CAF50; /* Warna hijau saat fokus */
+  outline: none;
+}
+
+/* Tombol Kirim */
+.contact-form button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efek hover pada tombol */
+.contact-form button:hover {
+  background-color: #555;
+}
+
+/* Responsif - Menyesuaikan tampilan pada layar kecil */
+@media (max-width: 768px) {
+  .content-contact {
+      padding: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+      font-size: 0.9em;
+      padding: 10px;
+  }
+
+  .contact-form button {
+      font-size: 1em;
+      padding: 10px;
+  }
 }
 

@@ -85,8 +85,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <label for="tanggal_penjemputan" class="form-label">Tanggal Penjemputan:</label>
         <input type="date" name="tanggal_penjemputan" id="tanggal_penjemputan" class="form-input" required>
+        <div class="profile">
+            <button type="submit" class="submit-button">Buat Transaksi</button>
+            <div class="back-to-home">
+                <a href="index.php">
+                    <button type="button" class="back-button">Back to Home</button>
+                </a>
+            </div>
 
-        <button type="submit" class="submit-button">Buat Transaksi</button>
+        </div>
+
     </form>
 
 </body>

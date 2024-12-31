@@ -23,9 +23,9 @@ $username = $isLoggedIn ? $_SESSION['username'] : null;
     <h1 class="logo">ShoeCare Pro</h1>
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
+      <li><a href="about.php">About Us</a></li>
       <li><a href="transaksi.php">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.php">Contact</a></li>
     </ul>
     <!-- Tampilkan ikon user -->
     <div class="user-info">
@@ -94,7 +94,6 @@ $username = $isLoggedIn ? $_SESSION['username'] : null;
   <section class="container-about">
     <h1>ABOUT</h1>
     <div class="about">
-      <!-- <img src="/img/bg12.png" alt="" /> -->
       <h3>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
         cupiditate unde iste! Neque, sequi, dolore sapiente soluta, illum et
@@ -111,9 +110,9 @@ $username = $isLoggedIn ? $_SESSION['username'] : null;
       </div>
       <div class="footer-middle">
         <ul>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.php">About Us</a></li>
           <li><a href="transaksi.php">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
       </div>
       <div class="footer-right">

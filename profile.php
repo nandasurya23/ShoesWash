@@ -41,19 +41,22 @@ $updateMode = isset($_GET['update']) ? true : false;
       </div>
 
       <!-- Tombol Update -->
-      <?php if (!$updateMode): ?>
-        <div class="edit-profile">
-          <a href="profile.php?update=1">
-            <button class="update-btn">Update Profile</button>
+      <div class="profile">
+        <?php if (!$updateMode): ?>
+          <div class="edit-profile">
+            <a href="profile.php?update=1">
+              <button class="update-btn">Update Profile</button>
+            </a>
+          </div>
+        <?php endif; ?>
+
+        <div class="back-to-home">
+          <a href="index.php">
+            <button>Back to Home</button>
           </a>
         </div>
-      <?php endif; ?>
-
-      <div class="back-to-home">
-        <a href="index.php">
-          <button>Back to Home</button>
-        </a>
       </div>
+
 
       <!-- Form Update -->
       <?php if ($updateMode): ?>
@@ -87,12 +90,12 @@ $updateMode = isset($_GET['update']) ? true : false;
         </form>
       <?php endif; ?>
       <div class="logout-button">
-    <a href="logout.php">
-      <button>Logout</button>
-    </a>
-  </div>
+        <a href="logout.php">
+          <button>Logout</button>
+        </a>
+      </div>
     </div>
-  
+
   </div>
 
 </body>
